@@ -1,0 +1,40 @@
+.bg-modal {
+  width: 100%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal-content {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border radius: 4px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  background-color: #173f5f;
+  color: white;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 45px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  input {
+          padding: 15px 100px;
+          margin: 10px 4px;
+          cursor: pointer;
+          text-align: center;
+          position: relative;
+        }
+        input:hover {
+          opacity: 0.5;
+  }

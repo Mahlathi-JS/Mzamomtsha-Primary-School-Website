@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> Fetch Github Login Users</title>
+    <style>
+    *{background-color: #173f5f};
+     {display: inline-block};
+     {color: white};
+     {font-size: 60px};
+    </style>
+ </head>
+<body>
+    <h1><span>Github Logins:</span></h1>
+    <button type="button" onclick="pageRedirect()">Go back to Home page</button>
+
+<script>
+async function fetchData(){
+  var response = await fetch("https://api.github.com/users");
+   return response;
+}
+fetchData()
+.then(function(response){
+  return response.json()
+})
+ .then(function(response){
+   console.log(response)
+})
+.catch(function(err){
+  console.log(err)
+})
+function pageRedirect() {
+  window.location.replace("index.html");
+}
+  setTimeout("pageRedirect()", 90000);
+   </script>
+ </body>
+</html>

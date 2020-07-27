@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>File Objects</title>
+ </head>
+ <style>
+ *{background-color: #173f5f};
+  {display: inline-block};
+  {color: white};
+  {font-size: 60px};
+ </style>
+<body>
+<h1><span>File Objects: Uploading a file on your website and displaying it.</span></h1>
+  <form id="myForm">
+  Name: <input type="text" name="firstName" value="" placeholder="Enter your name">
+  <br />
+  Picture: <input type="file" name="picture" accept="image/*">
+  <br />
+  <input type="submit" onclick="show_popup()">
+  <br />
+  <button type="button" onclick="pageRedirect()">Go back to Home page</button>
+
+</form>
+<script>
+    function pageRedirect() {
+        window.location.replace("index.html");
+    }
+    setTimeout("pageRedirect()", 50000);
+   </script>
+ </body>
+</html>
