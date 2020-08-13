@@ -6,7 +6,9 @@
 	<meta name="description" content=" School Site | eCommerce still under construction ">
 	<meta name="keywords" content="SCHOOL SITE, eCommerce, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Favicon -->
+ <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+ 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/png" href="../pics/favicon32x32.png">
 
 	<!-- Google Font -->
@@ -30,6 +32,10 @@
 <link rel="stylesheet" href="css/tab.css">
 
 <style>
+body {
+	background-color: #173f5f;
+	color: white;
+}
 #navbar {
   overflow: hidden;
 	background-color: midnightblue;
@@ -65,7 +71,6 @@
 		z-index: 94;
 	}
 #formElem, #message{
-	background-color: #173f5f;
 	color: black;
 	text-align: center;
 	margin: 100px;
@@ -119,10 +124,10 @@
 			<a id="events" onclick="changeColor2()" href="#schoolProject">Events</a>
 			<a id="contacts" onclick="changeColor3()" href="#footerDiv">Contacts</a>
 			<a id="game" href="game.html">Game</a>
-			<a id="popup" href="modal.html">Modal Popup</a>
+			<a id="popup" href="modalpopup.html">Modal Popup</a>
 			<a id="chat-app" href="https://yamkelas-realtime-chat-app98.herokuapp.com/">Realtime-chat-app</a>
 			<a id="todo-app" href="https://todo-list-app01.herokuapp.com/">Todo-list-app</a>
-			<a id="store-app" href="https://angular-46pubs.stackblitz.io">Store-app</a>
+			<a id="store-app" href="https://angular-46pubs-u34xyx.stackblitz.io">Store-app</a>
 			<div style="width: 100%; height: 10px; background-color: steelblue;z-index: 104;background-attachment: fixed;"></div>
 		</div>
 
@@ -216,7 +221,7 @@
 	</section>
   </div>
 <div>
-<div class="aboutus" style="background-color: #173f5f">
+<div class="aboutus">
 <div id="history">
 	<br><br>
 </div>
@@ -259,9 +264,8 @@
       <img src="./pics/2.jpg" id="firstClone">
     </div>
   </div>
-  <!--Buttons for controls slider-->
-  <button id="prevBtn">Prev</button>
-  <button id="nextBtn">Next</button>
+  	<button id="prevBtn">Prev</button>
+		<button id="nextBtn">Next</button>
 	</section>
 	<br />
 	<br />
@@ -291,18 +295,18 @@
 
 <div class="container">
 	Message: <input type="text" id="message" placeholder="Enter your message here" style="width:40%" "height:50%">
-	 <input type="submit" onclick="showMessage()" value="Send message">
+	 <input type="submit" style="background-color:black;" onclick="showMessage()" value="Send message">
  </div>
  <br />
 
-<div class="button-container-div">
+<div class="center">
  <input type="button" class="button" onclick="pageRedirected()"value="Go to File Reader">
 </div>
 <br />
-<div class="button-container-div">
+<div class="center">
  <input type="button" class="button" onclick="pageRedirect()"value="Go to Github Login Users">
 </div>
-<div class="button-container-div">
+<div class="center">
  <input type="button" class="button" onclick="pageLinked()"value="Go to Node.js First Application">
 </div>
 <br />
